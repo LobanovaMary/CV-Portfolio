@@ -1,0 +1,26 @@
+.nav {
+  &__container {
+    width: 510px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    list-style: none;
+  }
+  &__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: 0.03em;
+    color: $color-white;
+    transition: all 0.4s;
+    &:hover {
+      cursor: pointer;
+      color: #c4ab0a;
+    }
+  }
+}
