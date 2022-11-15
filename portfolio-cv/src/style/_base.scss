@@ -20,3 +20,10 @@ html {
 body {
   background-color: $color-bg-main;
 }
+
+.title__h1 {
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

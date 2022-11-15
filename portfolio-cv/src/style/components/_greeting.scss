@@ -1,0 +1,17 @@
+.greeting {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  &__content {
+    color: $color-yellow;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 90px;
+    letter-spacing: 0.03em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $color-text-stroke;
+  }
+}

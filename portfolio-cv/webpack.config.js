@@ -15,6 +15,7 @@ const config = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: 'assets/[hash][ext][query]',
   },
   devServer: {
     open: true,
@@ -56,19 +57,6 @@ const config = {
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
         type: 'asset',
-      },
-      {
-        test: /\.(png|jpe?g|gif)$/i,
-
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              publicPath: '../',
-              name: `assets/[name].[ext]`,
-            },
-          },
-        ],
       },
 
       // Add your rules for custom modules here
