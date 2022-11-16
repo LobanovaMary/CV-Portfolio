@@ -1,0 +1,36 @@
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  &__img {
+    width: 398px;
+    height: 530px;
+    background-color: $color-bg-checkbox-lang-controls;
+    filter: blur(3px);
+  }
+  &__content {
+    width: 583px;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    align-items: center;
+    letter-spacing: 0.05em;
+    color: $color-dark;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &__description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: justify;
+    letter-spacing: 0.04em;
+    color: $color-test-grey;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
