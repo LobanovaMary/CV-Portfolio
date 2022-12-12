@@ -11,7 +11,13 @@
     font-size: 60px;
     line-height: 90px;
     letter-spacing: 0.03em;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: $color-text-stroke;
+  }
+  &__sub-content {
+    color: $color-test-grey;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.03em;
   }
 }

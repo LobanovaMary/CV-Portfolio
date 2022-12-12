@@ -3,12 +3,13 @@
   margin: auto;
 }
 .header {
-  padding: 30px 0px;
+  padding: 15px 0px;
   background-color: $color-bg-dark;
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 .greeting {
@@ -18,8 +19,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.about {
-  padding: 150px 0;
+.my-works {
+  padding: 90px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .skills {
   background-color: $color-bg-light-dark;

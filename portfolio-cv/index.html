@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <title>Portfolio</title>
-
+  <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 
 <body>
@@ -13,70 +13,99 @@
     <div class="container header__wrapper">
       <nav class="nav__container">
         <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link">About me</a></li>
-          <li class="nav__item"><a class="nav__link">Skills</a></li>
-          <li class="nav__item"><a class="nav__link">My works</a></li>
-          <li class="nav__item"><a class="nav__link">Contacts</a></li>
+          <li class="nav__item"><a class="nav__link">Мои работы</a></li>
+          <li class="nav__item"><a class="nav__link">Стек технологий</a></li>
+          <li class="nav__item"><a class="nav__link">Контакты</a></li>
         </ul>
       </nav>
-      <div class="lang-controls">
-        <img class="lang-controls__img" src="./assets/eng-lang-icon.png" alt="English">
-        <input type="checkbox" class="lang-controls__checkbox">
-        <img class="lang-controls__img" src="./assets/rus-lang-icon.png" alt="Russian">
+      <div class="my-foto">
+        <a href="https://github.com/LobanovaMary" title="GitHub">
+          <img class="my-foto__img" src="assets/my_foto.jpg" alt="Foto">
+        </a>
       </div>
     </div>
   </header>
   <main>
     <section class="greeting">
       <div class="container greeting__wrapper">
-        <h1 class="title__h1">Lobanova Mary. Portfolio</h1>
-        <h2 class="greeting__content">Hello. My name is Mary,<br />
-          and I’m Front-end Developer<span>_</span></h2>
+        <h1 class="title__h1">Лобанова Мария. Портфолио</h1>
+        <h2 class="greeting__content">Привет. Меня зовут Мария,<br />
+          и я Front-end Developer<span>_</span></h2>
+        <p class=" greeting__sub-content">Занимаюсь програмированием с 2019 года.</p>
       </div>
     </section>
-    <section class="container about">
-      <div class="about__img"></div>
-      <div class="about__content">
-        <h2 class="about__title">About me</h2>
-        <p class="about__description">
-          I started taking my first steps in programming in 2020. I started by learning Java Core on the site
-          javarush.ru. Then I knew about the RSS JavaScript/Front-end course and in September I began it.
-        </p>
-        <p class="about__description">Today I have done many interesting web projects of different complexity.</p>
+    <section class="my-works container">
+
+      <h2 class="my-works__title">Мои работы</h2>
+      <div class="my-works__slider"></div>
+      <div class="my-works__container">
+        <div class="work-item">
+          <img class="work-item__img" src="assets/work-items/shelter-main.jpg" alt="shelter">
+          <div class="work-item__description">
+            <h4 class="work-item__title">shelter</h4>
+            <img class="work-item__icon" src="assets/JS-icon.svg" alt="JS">
+          </div>
+        </div>
+        <div class="work-item">
+          <img class="work-item__img" src="assets/work-items/online-zoo-main.jpg" alt="online-zoo">
+          <div class="work-item__description">
+            <h4 class="work-item__title">online-zoo</h4>
+            <img class="work-item__icon" src="assets/JS-icon.svg" alt="JS">
+          </div>
+        </div>
+        <div class="work-item">
+          <img class="work-item__img" src="assets/work-items/pomodoro-timer-main.jpg" alt="pomodoro timer">
+          <div class="work-item__description">
+            <h4 class="work-item__title">pomodoro timer</h4>
+            <img class="work-item__icon" src="assets/JS-icon.svg" alt="JS">
+          </div>
+        </div>
+        <div class="work-item">
+          <img class="work-item__img" src="assets/work-items/CSS-Slider-main.jpg" alt="Only CSS slider">
+          <div class="work-item__description">
+            <h4 class="work-item__title">Only CSS slider</h4>
+
+          </div>
+        </div>
       </div>
+
     </section>
     <section class="skills">
       <div class="container skills__wrapper">
-        <h2 class="skills__title">My Skills</h2>
+        <h2 class="skills__title">Стек технологий</h2>
         <div class="skills__container">
           <div class="skills__item">
             <h3 class="skills__item-title">Html</h3>
-            <p class="skills__item-description">Write semantic HTML. <br /> Create forms and validations.</p>
+            <p class="skills__item-description">Семантическая разметка HTML5</p>
+            <p class="skills__item-description">Создания форм и их валидация</p>
           </div>
           <div class="skills__item">
             <h3 class="skills__item-title">CSS</h3>
-            <p class="skills__item-description">Flexbox / Grid. <br /> Responsive and adaptive design. <br /> Mobile
-              First and Desktop First approach.</p>
+            <p class="skills__item-description">Flexbox / Grid</p>
+            <p class="skills__item-description"> Респонсив и адаптивный дизайн</p>
+            <p class="skills__item-description"> Mobile First и Desktop First подход</p>
           </div>
           <div class="skills__item">
             <h3 class="skills__item-title">JavaScript</h3>
-            <p class="skills__item-description">ES6+ syntax <br /> DOM Manipulation <br /> OOP / Functional Approach
+            <p class="skills__item-description">ES6+ синтакс </p>
+            <p class="skills__item-description">DOM манипуляции </p>
+            <p class="skills__item-description"> ООП / Функциональный подход
             </p>
           </div>
           <div class="skills__item">
-            <h3 class="skills__item-title">BEM </h3>
-            <p class="skills__item-description"> Create a HTML markup with BEM methodology
+            <h3 class="skills__item-title">БЭМ</h3>
+            <p class="skills__item-description"> Создание HTML разметки в соответствии с БЭМ методологией
             </p>
           </div>
           <div class="skills__item">
             <h3 class="skills__item-title">SASS</h3>
-            <p class="skills__item-description"> CSS pre-processor, adding of nested rules, variables, mixins, selector
-              inheritance, and more.
+            <p class="skills__item-description"> Препроцессор CSS, добавление вложенных правил, переменных, миксинов,
+              селектор родителя и многое другое
             </p>
           </div>
           <div class="skills__item">
             <h3 class="skills__item-title">Git</h3>
-            <p class="skills__item-description"> Ability to work with git repositories and core functionality.
+            <p class="skills__item-description"> Умение работать с основным функционалом и репозиторием git
             </p>
           </div>
           <div class="skills__item">
@@ -89,29 +118,20 @@
             <p class="skills__item-description">
             </p>
           </div>
+
           <div class="skills__item">
-            <h3 class="skills__item-title">Node</h3>
+            <h3 class="skills__item-title">Webpack</h3>
             <p class="skills__item-description">
             </p>
           </div>
-          <div class="skills__item">
-            <h3 class="skills__item-title">Redux</h3>
-            <p class="skills__item-description">
-            </p>
-          </div>
-          <div class="skills__item">
-            <h3 class="skills__item-title">Education</h3>
-            <p class="skills__item-description">Graduated from MEPhI University with a bachelor's program: "Accounting,
-              analysis and audit".</p>
-          </div>
-          <div class="skills__item">
-            <h3 class="skills__item-title">English</h3>
-            <p class="skills__item-description"> B1 - Intermediate</p>
-          </div>
+
+
         </div>
       </div>
     </section>
+
   </main>
+
 </body>
 
 </html>
