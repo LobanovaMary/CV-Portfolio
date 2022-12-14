@@ -3,7 +3,7 @@
   margin: auto;
 }
 .header {
-  padding: 15px 0px;
+  padding: 10px 0px;
   background-color: $color-bg-dark;
 
   &__wrapper {
@@ -30,4 +30,11 @@
   &__wrapper {
     padding: 80px 0px;
   }
+}
+.contact {
+  padding: 90px 0;
+}
+.footer {
+  padding: 90px 0;
+  background-color: $color-bg-dark;
 }

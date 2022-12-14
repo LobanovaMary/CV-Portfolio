@@ -11,7 +11,7 @@
     font-size: 60px;
     line-height: 90px;
     letter-spacing: 0.03em;
-    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $color-text-stroke;
   }
   &__sub-content {
@@ -19,5 +19,67 @@
     font-weight: 400;
     font-size: 24px;
     letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+  &__cv-btn {
+    background-color: $color-bg-dark;
+    width: 240px;
+    padding: 10px 0px;
+    text-align: center;
+    color: $color-white;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    transition: all 0.3s;
+    border-radius: 5px;
+    margin-bottom: 180px;
+    position: relative;
+    &::after {
+      content: '';
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      background-image: url(../../assets/icon-cv.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: all 0.3s;
+    }
+    &:hover {
+      cursor: pointer;
+      color: $color-yellow;
+      background-color: $color-bg-hover;
+      transform: translateY(-5%);
+      box-shadow: 0px 5px 8px 0px rgba(0, 112, 120, 0.4);
+      &::after {
+        background-image: url(../../assets/icon-cv-hover.png);
+      }
+    }
+    &:active {
+      cursor: pointer;
+      transform: translateY(0%);
+    }
+  }
+  &__socials {
+    padding: 10px 35px;
+    background-color: rgba($color-bg-dark, 0.8);
+    display: flex;
+    gap: 60px;
+    align-self: flex-end;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 2px rgba(226, 232, 231, 0.4);
+
+    & > a > img {
+      width: 45px;
+      filter: invert(89%) sepia(1%) saturate(788%) hue-rotate(118deg)
+        brightness(111%) contrast(83%);
+
+      &:hover {
+        filter: invert(79%) sepia(82%) saturate(0%) hue-rotate(324deg)
+          brightness(108%) contrast(102%);
+      }
+    }
   }
 }
