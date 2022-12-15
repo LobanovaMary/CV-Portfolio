@@ -195,15 +195,17 @@
               <img src="assets/google-plus-icon.png" alt="Google Mail">
             </a>
           </div>
+          <!-- <form class="contact__form" action="https://formsubmit.co/b4677f3bce9fc1ece571f42b59de0170" method="POST"> -->
           <form class="contact__form">
             <div class="contact__form-name"> <label for="name">Имя:</label>
-              <input type="text" id="name">
+              <input type="text" id="name" name="name">
             </div>
             <div class="contact__form-email">
               <label for="email">Email:</label>
-              <input type="text" id="email">
+              <input type="email" id="email" name="email">
             </div>
-            <textarea class="contact__form-text" id="text" rows="5" placeholder="Введите ваше сообщение"></textarea>
+            <textarea class="contact__form-text" name="message" id="text" rows="5"
+              placeholder="Введите ваше сообщение"></textarea>
             <button class="contact__form-btn" type="submit">Отправить</button>
           </form>
         </div>
