@@ -177,13 +177,42 @@
     </section>
     <section class="contact container">
       <div class="contact__container">
-
+        <h2 class="contact__title">Контакты</h2>
+        <div class="contact__content-wrapper">
+          <div class="contact__socials">
+            <div class="contact__socials-foto">
+              <a href="https://github.com/LobanovaMary" title="GitHub">
+                <img class="my-foto__img" src="assets/my_foto.jpg" alt="Foto">
+              </a>
+            </div>
+            <a class="contact__link" href="https://t.me/LobanovaMary">
+              <img src="assets/telegram-icon.png" alt="Telegram">
+            </a>
+            <a class="contact__link" href="https://github.com/LobanovaMary">
+              <img src="assets/github-icon.png" alt="GitHub">
+            </a>
+            <a class="contact__link" href="mailto:lobanovama1@gmail.com">
+              <img src="assets/google-plus-icon.png" alt="Google Mail">
+            </a>
+          </div>
+          <form class="contact__form">
+            <div class="contact__form-name"> <label for="name">Имя:</label>
+              <input type="text" id="name">
+            </div>
+            <div class="contact__form-email">
+              <label for="email">Email:</label>
+              <input type="text" id="email">
+            </div>
+            <textarea class="contact__form-text" id="text" rows="5" placeholder="Введите ваше сообщение"></textarea>
+            <button class="contact__form-btn" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </section>
 
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class=" footer__wrapper container">
       <nav class="nav__container">
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link">Мои работы</a></li>
@@ -191,6 +220,9 @@
           <li class="nav__item"><a class="nav__link">Контакты</a></li>
         </ul>
       </nav>
+      <div class="footer__year">
+        <p>Lobanova Maria 2022 &copy;</p>
+      </div>
     </div>
   </footer>
 

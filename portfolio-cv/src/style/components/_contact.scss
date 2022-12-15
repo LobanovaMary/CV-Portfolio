@@ -1,9 +1,96 @@
 .contact {
   &__container {
-    padding: 90px 0;
+    padding: 60px 30px 90px 30px;
     border-radius: 25px;
     background-color: #e6fcff;
     margin: 0 60px;
     box-shadow: 0px 5px 5px 0px rgba(0, 112, 120, 0.4);
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 0.08em;
+    color: $color-dark;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__content-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+  }
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 15px;
+    &-foto {
+      width: 135px;
+      height: 135px;
+      & > a > img {
+        box-shadow: 0px 0px 8px 6px rgba(0, 112, 120, 0.2);
+      }
+    }
+  }
+  &__link {
+    display: block;
+    width: 45px;
+    transition: all 0.3s;
+    & > img {
+      width: 100%;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+    padding: 0px 30px;
+    &-name,
+    &-email {
+      display: flex;
+      flex-direction: column;
+      color: $color-test-grey;
+      gap: 7px;
+      & > input {
+        outline: none;
+        border: 1px solid $color-bg-dark;
+        padding: 7px 10px;
+      }
+    }
+    &-text {
+      outline: none;
+      border: 1px solid $color-bg-dark;
+      padding: 7px 10px;
+    }
+    &-btn {
+      background-color: $color-bg-dark;
+      padding: 10px 0px;
+      text-align: center;
+      color: $color-white;
+      font-size: 22px;
+      transition: all 0.3s;
+      border-radius: 5px;
+      letter-spacing: 0.05em;
+      border: none;
+      &:hover {
+        cursor: pointer;
+        color: $color-yellow;
+        background-color: $color-bg-hover;
+        transform: translateY(-5%);
+        box-shadow: 0px 5px 8px 0px rgba(0, 112, 120, 0.4);
+      }
+      &:active {
+        cursor: pointer;
+        transform: translateY(0%);
+      }
+    }
   }
 }

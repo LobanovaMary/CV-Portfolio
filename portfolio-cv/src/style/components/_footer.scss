@@ -1,0 +1,12 @@
+.footer {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__year {
+    margin-left: auto;
+    color: $color-bg-light-dark;
+    letter-spacing: 0.04em;
+    opacity: 0.8;
+  }
+}
