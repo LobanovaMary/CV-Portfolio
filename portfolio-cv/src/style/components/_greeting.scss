@@ -19,7 +19,7 @@
     font-weight: 400;
     font-size: 24px;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
   &__cv-btn {
     background-color: $color-bg-dark;
@@ -35,6 +35,7 @@
     border-radius: 5px;
     margin-bottom: 180px;
     position: relative;
+    letter-spacing: 0.05em;
     &::after {
       content: '';
       width: 30px;

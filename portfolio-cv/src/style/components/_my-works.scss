@@ -1,7 +1,6 @@
 .my-works {
   &__title {
     font-weight: 600;
-
     font-size: 42px;
     line-height: 50px;
     letter-spacing: 0.08em;
@@ -10,9 +9,34 @@
     position: relative;
     display: inline-block;
   }
+
+  &__slider {
+    border-radius: 25px;
+    background-color: #e6fcff;
+    margin: 0 60px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 112, 120, 0.4);
+    padding: 60px 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 60px;
+    & > * {
+      animation: appearance 0.3s;
+    }
+  }
+
   &__container {
     display: grid;
     grid-template-columns: repeat(3, 400px);
     gap: 30px;
+  }
+
+  @keyframes appearance {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
   }
 }
