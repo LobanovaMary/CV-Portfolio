@@ -24,7 +24,7 @@
   }
 
   &__img-wrapper {
-    width: auto;
+    width: 65%;
   }
   &__img {
     width: 100%;
@@ -32,8 +32,9 @@
   }
 
   &__controls {
-    margin-top: auto;
-    margin-bottom: 45px;
+    position: absolute;
+    bottom: 70px;
+    left: 90px;
     display: flex;
     justify-content: center;
     gap: 30px;

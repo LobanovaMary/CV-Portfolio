@@ -1,7 +1,6 @@
 const postForm = () => {
   const form = document.querySelector('.contact__form');
 
-  console.log('hi from post form');
   function serializeForm(formNode) {
     const { elements } = formNode;
 
