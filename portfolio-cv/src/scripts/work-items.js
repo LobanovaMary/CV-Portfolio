@@ -17,6 +17,13 @@ const workItems = [
     iconPath: `assets/JS-icon.svg`,
     altIcon: 'JS',
   },
-  { age: 12 },
+  {
+    title: 'online-zoo',
+    description: `<p>Online-zoo - это платформа, где собрана информация о животных из различных зоопарков, состоящий из двух страниц,
+     по макету из Figma. Использована методология БЭМ и препроцессор SCSS. Интерактивность сделана на ванильном JavaScript.</p>`,
+    imgPath: `assets/work-items/online-zoo-main.jpg`,
+    iconPath: `assets/JS-icon.svg`,
+    altIcon: 'JS',
+  },
 ];
 export default workItems;
