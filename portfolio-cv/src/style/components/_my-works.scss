@@ -30,9 +30,10 @@
   }
 
   &__container {
-    display: grid;
-    grid-template-columns: repeat(3, 400px);
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
   }
 
   @keyframes appearance {

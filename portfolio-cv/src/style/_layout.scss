@@ -68,4 +68,7 @@
 .footer {
   padding: 60px 0;
   background-color: $color-bg-dark;
+  @media screen and (max-width: 1240px) {
+    padding: 45px 15px;
+  }
 }

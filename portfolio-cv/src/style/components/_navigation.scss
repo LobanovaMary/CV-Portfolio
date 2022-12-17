@@ -17,6 +17,7 @@
       }
     }
   }
+
   &__list {
     display: flex;
     justify-content: space-between;
@@ -43,6 +44,12 @@
     &:hover {
       cursor: pointer;
       color: #c4ab0a;
+    }
+  }
+  &__footer {
+    @media screen and (max-width: 840px) {
+      flex-direction: column;
+      gap: 15px;
     }
   }
 }

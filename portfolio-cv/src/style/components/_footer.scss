@@ -2,6 +2,10 @@
   &__wrapper {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 840px) {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
   &__year {
     margin-left: auto;
