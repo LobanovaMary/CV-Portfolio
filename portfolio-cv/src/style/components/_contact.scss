@@ -5,6 +5,16 @@
     background-color: #e6fcff;
     margin: 0 60px;
     box-shadow: 0px 5px 5px 0px rgba(0, 112, 120, 0.4);
+    @media screen and (max-width: 1240px) {
+      margin: 0 30px;
+    }
+    @media screen and (max-width: 820px) {
+      padding: 30px 0px 60px 0px;
+    }
+    @media screen and (max-width: 680px) {
+      padding: 10px 0px 20px 0px;
+      margin: 0 10px;
+    }
   }
   &__title {
     font-weight: 600;
@@ -14,11 +24,28 @@
     color: $color-dark;
     text-align: center;
     margin-bottom: 60px;
+    @media screen and (max-width: 680px) {
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: 420px) {
+      margin-bottom: 0px;
+    }
   }
   &__content-wrapper {
     display: flex;
     justify-content: center;
     gap: 160px;
+    @media screen and (max-width: 1240px) {
+      gap: 60px;
+    }
+    @media screen and (max-width: 920px) {
+      justify-content: space-evenly;
+      gap: 10px;
+    }
+    @media screen and (max-width: 680px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__socials {
     display: flex;
@@ -26,11 +53,21 @@
     gap: 20px;
     align-items: center;
     margin-top: 15px;
+    @media screen and (max-width: 680px) {
+      flex-direction: row;
+    }
+    @media screen and (max-width: 420px) {
+      gap: 10px;
+    }
     &-foto {
       width: 140px;
       height: 135px;
       & > a > img {
         box-shadow: 0px 0px 8px 6px rgba(0, 112, 120, 0.2);
+      }
+      @media screen and (max-width: 420px) {
+        width: 100px;
+        height: 95px;
       }
     }
   }
@@ -55,6 +92,13 @@
     gap: 20px;
     width: 45%;
     padding: 0px 30px;
+    @media screen and (max-width: 1240px) {
+      padding: 0px 10px;
+      width: 65%;
+    }
+    @media screen and (max-width: 680px) {
+      width: 90%;
+    }
     &-name,
     &-email {
       display: flex;
