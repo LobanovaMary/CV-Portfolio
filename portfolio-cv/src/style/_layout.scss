@@ -40,6 +40,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: 680px) {
+    padding: 30px 5px;
+  }
 }
 .skills {
   background-color: $color-bg-light-dark;
