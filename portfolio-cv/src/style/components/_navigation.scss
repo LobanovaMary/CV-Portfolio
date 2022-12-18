@@ -1,16 +1,48 @@
 .nav {
-  // &__container {
-  // }
-
-  &__header {
+  &__burger-menu {
+    display: none;
     @media screen and (max-width: 700px) {
+      display: block;
       width: 35px;
       height: 35px;
-      background-image: url('../../assets/menu-burger.png');
       background-size: cover;
       background-repeat: no-repeat;
       transition: all 0.3;
+      position: relative;
 
+      & > span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        background-color: $color-white;
+      }
+      &--open > span {
+        display: none;
+      }
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: $color-white;
+      }
+      &::after {
+        top: 5px;
+      }
+      &::before {
+        bottom: 3px;
+      }
+      &--open::after {
+        transform: rotate(45deg);
+        top: 18px;
+      }
+      &--open::before {
+        transform: rotate(-45deg);
+        bottom: 15px;
+      }
       &:hover {
         cursor: pointer;
         transform: scale(1.1);
@@ -22,18 +54,35 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
-
+    transition: all 0.5s;
     &--header {
       @media screen and (max-width: 700px) {
         display: none;
+      }
+    }
+    &--open {
+      @media screen and (max-width: 700px) {
+        position: absolute;
+        display: block;
+        flex-direction: column;
+        top: 90px;
+        left: -30px;
+
+        justify-content: space-evenly;
+        background-color: $color-bg-hover;
+        padding: 30px 30px 30px 50px;
       }
     }
   }
 
   &__item {
     list-style: none;
+    @media screen and (max-width: 700px) {
+      margin-bottom: 20px;
+    }
   }
   &__link {
+    text-decoration: none;
     font-style: normal;
     font-weight: 500;
     font-size: 26px;
