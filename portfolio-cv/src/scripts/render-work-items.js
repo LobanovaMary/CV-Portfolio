@@ -1,19 +1,22 @@
 import data from './work-items.js';
 
-const renderWorkItems = (index = 0) => {
-  const container = document.querySelector('.my-works__slider-container');
-  container.innerHTML = '';
-  container.innerHTML = ` <div class="work-description__wrapper">
-  <h3 class="work-description__title">${data[index].title}</h3>
-    <div class="work-description__content">
-    ${data[index].description}
-    </div>
-    </div>
-  <div class="work-description__img-wrapper">
-    <img class="work-description__img" src="${data[index].imgPath}" alt="${data[index].title}">
-  </div>
-  </div>
- `;
+const renderWorkItems = () => {
+  const container = document.querySelector('.my-works__container');
+  const html = data
+    .map((el, id) => {
+      const icon = el.iconPath
+        ? `<img class="work-item__icon" src="${el.iconPath}" alt="${el.altIcon}">
+    </div>`
+        : '';
+      return ` <div class="work-item" data-id=${id}>
+    <img class="work-item__img" src="${el.imgPath}" alt="${el.title}">
+    <div class="work-item__description">
+      <h4 class="work-item__title">${el.title}</h4>
+     ${icon} 
+  </div>`;
+    })
+    .join(' ');
+  container.innerHTML = html;
 };
 
 export default renderWorkItems;

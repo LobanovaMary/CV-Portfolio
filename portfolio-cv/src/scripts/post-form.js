@@ -1,5 +1,8 @@
 const postForm = () => {
   const form = document.querySelector('.contact__form');
+  const modalWindow = document.querySelector('.modal-window');
+  const overlay = document.querySelector('.overlay');
+  const closeBtn = document.querySelector('.modal-window__close');
 
   function serializeForm(formNode) {
     const { elements } = formNode;
@@ -31,8 +34,16 @@ const postForm = () => {
       }),
     })
       .then((response) => response.json())
-      .then((data) => console.log(data))
+      .then((data) => {
+        modalWindow.classList.add('modal-window--open');
+        overlay.classList.remove('overlay--hidden');
+      })
       .catch((error) => console.log(error));
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modalWindow.classList.remove('modal-window--open');
+    overlay.classList.add('overlay--hidden');
   });
 };
 

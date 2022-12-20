@@ -28,6 +28,17 @@
     padding-left: 20px;
     list-style-image: url('../../assets/marker.png');
   }
+  &__content > a {
+    font-size: 22px;
+    color: $color-bg-dark;
+    text-decoration: none;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $color-bg-hover;
+    }
+  }
 
   &__img-wrapper {
     width: 65%;

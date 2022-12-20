@@ -8,6 +8,8 @@
 .header {
   padding: 10px 0px;
   background-color: $color-bg-dark;
+  z-index: 8;
+  position: relative;
 
   &__wrapper {
     display: flex;

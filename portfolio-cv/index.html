@@ -63,36 +63,7 @@
         </div>
       </div>
       <div class="my-works__container">
-        <div class="work-item">
-          <img class="work-item__img" src="assets/work-items/shelter-main.jpg" alt="shelter">
-          <div class="work-item__description">
-            <h4 class="work-item__title">shelter</h4>
-            <img class="work-item__icon" src="assets/JS-icon.svg" alt="JS">
-          </div>
-        </div>
-        <div class="work-item">
-          <img class="work-item__img" src="assets/work-items/online-zoo-main.jpg" alt="online-zoo">
-          <div class="work-item__description">
-            <h4 class="work-item__title">online-zoo</h4>
-            <img class="work-item__icon" src="assets/JS-icon.svg" alt="JS">
-          </div>
-        </div>
-        <div class="work-item">
-          <img class="work-item__img" src="assets/work-items/pomodoro-timer-main.jpg" alt="pomodoro timer">
-          <div class="work-item__description">
-            <h4 class="work-item__title">pomodoro timer</h4>
-            <img class="work-item__icon" src="assets/JS-icon.svg" alt="JS">
-          </div>
-        </div>
-        <div class="work-item">
-          <img class="work-item__img" src="assets/work-items/CSS-Slider-main.jpg" alt="Only CSS slider">
-          <div class="work-item__description">
-            <h4 class="work-item__title">Only CSS slider</h4>
-
-          </div>
-        </div>
       </div>
-
     </section>
     <section class="skills" id="skills">
       <div class="container skills__wrapper">
@@ -183,14 +154,14 @@
 
           <form class="contact__form">
             <div class="contact__form-name"> <label for="name">Имя:</label>
-              <input type="text" id="name" name="name">
+              <input type="text" id="name" name="name" required>
             </div>
             <div class="contact__form-email">
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email">
+              <input type="email" id="email" name="email" required>
             </div>
-            <textarea class="contact__form-text" name="message" id="text" rows="5"
-              placeholder="Введите ваше сообщение"></textarea>
+            <textarea class="contact__form-text" name="message" id="text" rows="5" placeholder="Введите ваше сообщение"
+              required></textarea>
             <button class="contact__form-btn" type="submit">Отправить</button>
           </form>
         </div>
@@ -212,7 +183,11 @@
       </div>
     </div>
   </footer>
-
+  <div class="overlay overlay--hidden"></div>
+  <div class="modal-window ">
+    <p class="modal-window__message">Сообщение успешно отправлено 🚀</p>
+    <button class="modal-window__close"> Закрыть </button>
+  </div>
 </body>
 
 </html>
