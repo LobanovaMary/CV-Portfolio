@@ -2,6 +2,7 @@ const greetingAnimation = () => {
   const container = document.querySelector('.greeting__title');
   const subContent = document.querySelector('.greeting__sub-content');
   const text = 'Привет. Меня зовут Мария, и я Front-end Developer';
+  container.innerHTML = '';
 
   const cursor = document.createElement('span');
   cursor.textContent = '|';
